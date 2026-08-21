@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Field Kit Section</title>
+<style>
+  :root {
+    --green: #59A398;
+    --blue: #5D70AE;
+    --navy: #1B2F5B;
+    --border: #A6B3D5;
+    --body: #444;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { background: transparent; }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 12px;
+  }
+
+  .field-kit-label {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin: 0 0 16px;
+  }
+
+  .kit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .kit-card {
+    background: linear-gradient(to bottom, #ffffff 0%, #E8EDF8 100%);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 22px;
+  }
+
+  .kit-card .kit-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0 0 8px;
+  }
+
+  .kit-card .kit-desc {
+    font-size: 14px;
+    line-height: 1.55;
+    color: var(--body);
+    margin: 0 0 16px;
+  }
+
+  .kit-card a.kit-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green);
+    text-decoration: none;
+  }
+  .kit-card a.kit-link:hover { color: var(--blue); }
+
+  @media (max-width: 760px) {
+    .kit-grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+
+  <div class="field-kit-label">Field Kit</div>
+
+  <div class="kit-grid">
+
+    <div class="kit-card">
+      <p class="kit-title">Rate Comparison Sheet</p>
+      <p class="kit-desc">A fillable side-by-side to show a merchant's savings against their current processor.</p>
+      <a href="https://propelrpay1.sharepoint.com/:b:/s/AviatorLD/IQCIOpAC1vIZTYzlFa9kbHGHATAikO1Xt8vG_h_S3NXbh-8?e=p31POV" class="kit-link">Download →</a>
+    </div>
+
+    <div class="kit-card">
+      <p class="kit-title">Merchant Checklist</p>
+      <p class="kit-desc">The discovery questions to walk through with a merchant on their current setup.</p>
+      <a href="https://propelrpay1.sharepoint.com/:b:/s/AviatorLD/IQB8OqBkhngvRoC6bVejV3zZAUds7ekqPrnEBW132y-NSq4?e=4Ourec" class="kit-link">Download →</a>
+    </div>
+
+    <div class="kit-card">
+      <p class="kit-title">Customer Profile</p>
+      <p class="kit-desc">Capture a merchant's concerns, needs, and top priorities in one place.</p>
+      <a href="https://propelrpay1.sharepoint.com/:b:/s/AviatorLD/IQB-Yo4EnLIKSrFpD3OzBN9PAU9VUoIbh-eR07cy281Pzm0?e=yUzur2" class="kit-link">Download →</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
