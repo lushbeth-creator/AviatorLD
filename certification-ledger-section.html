@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certification Ledger Section</title>
+<style>
+  :root {
+    --navy: #1B2F5B;
+    --green: #59A398;
+    --border: #d8dce8;
+    --body: #444;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { background: transparent; }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 12px;
+  }
+
+  .ledger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .ledger-row {
+    display: grid;
+    grid-template-columns: 44px 1fr;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 22px 0;
+    border-top: 1px solid var(--border);
+  }
+  .ledger-row:last-child {
+    border-bottom: 1px solid var(--border);
+  }
+
+  .badge {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--green);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 15px;
+    flex-shrink: 0;
+  }
+
+  .ledger-body .title {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0 0 6px;
+  }
+
+  .ledger-body .desc {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--body);
+    margin: 0;
+  }
+</style>
+</head>
+<body>
+
+  <div class="ledger">
+    <div class="ledger-row">
+      <div class="badge">I</div>
+      <div class="ledger-body">
+        <p class="title">Partner Agreement & Platform Basics</p>
+        <p class="desc">How Propelr works, what you're authorized to sell, and where to find deal support.</p>
+      </div>
+    </div>
+    <div class="ledger-row">
+      <div class="badge">II</div>
+      <div class="ledger-body">
+        <p class="title">Pricing & Proposal Building</p>
+        <p class="desc">Structuring quotes, running comparisons, and positioning against incumbent processors.</p>
+      </div>
+    </div>
+    <div class="ledger-row">
+      <div class="badge">III</div>
+      <div class="ledger-body">
+        <p class="title">Compliance for Independent Agents</p>
+        <p class="desc">Disclosure requirements and dual-pricing rules you're responsible for in the field.</p>
+      </div>
+    </div>
+    <div class="ledger-row">
+      <div class="badge">IV</div>
+      <div class="ledger-body">
+        <p class="title">Earning Propelr Wings</p>
+        <p class="desc">Submit two closed deals for review to earn your Propelr wings.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
