@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Additional Resources Section</title>
+<style>
+  :root {
+    --green: #59A398;
+    --blue: #5D70AE;
+    --navy: #1B2F5B;
+    --border: #A6B3D5;
+    --body: #444;
+    --muted: #8A8078;
+  }
+
+  * { box-sizing: border-box; }
+
+  html, body { background: transparent; }
+
+  body {
+    margin: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    padding: 12px;
+  }
+
+  .resource-group { margin-bottom: 32px; }
+  .resource-group:last-child { margin-bottom: 0; }
+
+  .group-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--green);
+    text-transform: uppercase;
+    letter-spacing: .5px;
+    margin: 0 0 16px;
+  }
+
+  .kit-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+
+  .kit-grid-2col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  @media (max-width: 600px) {
+    .kit-grid-2col { grid-template-columns: 1fr; }
+  }
+
+  .kit-card {
+    background: linear-gradient(to bottom, #ffffff 0%, #E8EDF8 100%);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 22px;
+  }
+
+  .kit-card .kit-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--navy);
+    margin: 0 0 8px;
+  }
+
+  .kit-card .kit-desc {
+    font-size: 13.5px;
+    line-height: 1.55;
+    color: var(--body);
+    margin: 0 0 14px;
+  }
+
+  .kit-card a.kit-link {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--green);
+    text-decoration: none;
+  }
+  .kit-card a.kit-link:hover { color: var(--blue); }
+
+  .kit-card .kit-link-disabled {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--muted);
+    cursor: default;
+  }
+</style>
+</head>
+<body>
+
+  <div class="resource-group">
+    <p class="group-label">Prospecting Resources</p>
+    <div class="kit-grid">
+
+      <div class="kit-card">
+        <p class="kit-title">How to Enter a Lead</p>
+        <p class="kit-desc">A quick walkthrough for creating a new lead in Stratus.</p>
+        <a href="https://propelrpay1.sharepoint.com/:v:/s/AviatorLD/IQBny4tR04fgR7T3XnzdWyDvAdAr056vtSXlFbFDFcA0htQ?e=dLzJ1m" class="kit-link" target="_blank" rel="noopener noreferrer">Click to Visit →</a>
+      </div>
+
+      <div class="kit-card">
+        <p class="kit-title">Reference Solutions</p>
+        <p class="kit-desc">Look up business listings by location to build out a prospect list.</p>
+        <a href="https://referenceusa.com/Static/LibraryLocator" class="kit-link" target="_blank" rel="noopener noreferrer">Click to Visit →</a>
+      </div>
+
+      <div class="kit-card">
+        <p class="kit-title">BNI</p>
+        <p class="kit-desc">Find a local BNI chapter to network with other referral partners.</p>
+        <a href="https://www.bni.com" class="kit-link" target="_blank" rel="noopener noreferrer">Click to Visit →</a>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="resource-group">
+    <p class="group-label">Continuing Education</p>
+    <div class="kit-grid">
+
+      <div class="kit-card">
+        <p class="kit-title">Glossary of Terms &amp; Acronyms</p>
+        <p class="kit-desc">Quick definitions for the payments terms and acronyms you'll hear most.</p>
+        <a href="https://propelrpay1.sharepoint.com/sites/AviatorLD/SitePages/Glossary.aspx" class="kit-link" target="_blank" rel="noopener noreferrer">Click to Visit →</a>
+      </div>
+
+      <div class="kit-card">
+        <p class="kit-title">Flight School</p>
+        <p class="kit-desc">A deeper training track for Aviators, launching soon.</p>
+        <span class="kit-link-disabled">Coming Soon</span>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="resource-group">
+    <p class="group-label">The Application</p>
+    <div class="kit-grid-2col">
+
+      <div class="kit-card">
+        <p class="kit-title">Merchant Services Pre-Application</p>
+        <p class="kit-desc">The form to kick off a new merchant application with Propelr.</p>
+        <a href="https://propelrpay1.sharepoint.com/sites/AviatorLD/Shared%20Documents/Forms/AllItems.aspx?id=%2Fsites%2FAviatorLD%2FShared%20Documents%2FPropelr%20Pre%2DApplication%2Epdf&parent=%2Fsites%2FAviatorLD%2FShared%20Documents&p=true&ga=1" class="kit-link" target="_blank" rel="noopener noreferrer">Click to Visit →</a>
+      </div>
+
+      <div class="kit-card">
+        <p class="kit-title">How to Set Pricing</p>
+        <p class="kit-desc">A walkthrough for entering a merchant's pricing in Stratus.</p>
+        <a href="https://propelrpay1.sharepoint.com/:v:/s/AviatorLD/IQBpAoL9HN6HRqpt6Qw06cZNAYMfGPTkX8gAScpqS4qv_5Y?e=7dNS6L" class="kit-link" target="_blank" rel="noopener noreferrer">Click to Visit →</a>
+      </div>
+
+      <div class="kit-card">
+        <p class="kit-title">How to Add Equipment</p>
+        <p class="kit-desc">A walkthrough for adding equipment to a merchant's application.</p>
+        <a href="https://propelrpay1.sharepoint.com/:v:/s/AviatorLD/IQCk78e5OL2nRKUSV8lQ5DkNAe32v9UKgTSCbOqB4EpUDEc?e=vBe4Ry" class="kit-link" target="_blank" rel="noopener noreferrer">Click to Visit →</a>
+      </div>
+
+      <div class="kit-card">
+        <p class="kit-title">How to Send Agreement</p>
+        <p class="kit-desc">A walkthrough for sending the final agreement out for signature.</p>
+        <a href="https://propelrpay1.sharepoint.com/:v:/s/AviatorLD/IQAXKT2bprD9Qr6tlSjzLR1jATqnkRi_gSFWa5GHgpUrg-o?e=lD7hom" class="kit-link" target="_blank" rel="noopener noreferrer">Click to Visit →</a>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
