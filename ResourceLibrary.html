@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ResourceLibrary</title>
+<style>
+:root{--blue:#5D70AE;--green:#59A398;--purple:#A6B3D5;--pale:#F3F6FF;--navy:#1B2F5B;--muted:#444}
+*{box-sizing:border-box}html,body{background:transparent}
+body{margin:0;padding:14px;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--navy)}
+.lib{max-width:100%;margin:0}
+.heading{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:0 0 18px}
+.heading h1{margin:0 0 6px;color:var(--navy);font-size:18px;line-height:1.25}
+.heading .eyebrow{display:block;margin:0 0 6px;color:var(--green);font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase}
+.heading p{margin:0;color:var(--muted);font-size:16px;line-height:1.55}
+.lib-tag{flex-shrink:0;white-space:nowrap;color:var(--green);font-size:14px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;margin-top:2px}
+.categories{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.category{border:1px solid var(--purple);border-radius:12px;background:linear-gradient(to bottom,#ffffff 0%,#E8EDF8 100%);overflow:hidden;transition:.18s ease}
+.cat-head{display:flex;align-items:center;justify-content:space-between;width:100%;padding:16px;border:none;background:none;cursor:pointer;font-family:inherit;text-align:left}
+.category.open .cat-head{background:var(--pale)}
+.cat-head span.cat-title{font-size:18px;font-weight:700;color:var(--navy)}
+.cat-toggle{font-size:20px;font-weight:700;color:var(--green);line-height:1;flex-shrink:0}
+.cat-body{display:none;padding:4px 16px 12px}
+.category.open .cat-body{display:block}
+.res-item{display:block;padding:10px 0;border-top:1px solid rgba(93,112,174,.18);text-decoration:none;color:inherit}
+.res-item:first-child{border-top:none}
+.res-title{display:block;font-size:16px;font-weight:700;color:var(--blue)}
+.res-item:hover .res-title{color:var(--green)}
+.res-desc{display:block;margin-top:2px;font-size:14px;color:var(--muted);line-height:1.4}
+.res-item.disabled{cursor:default}
+.res-item.disabled .res-title{color:var(--purple)}
+@media(max-width:900px){.categories{grid-template-columns:1fr}}
+@media(max-width:700px){body{padding:8px}.heading{flex-direction:column}}
+</style>
+</head>
+<body>
+<main class="lib">
+<header class="heading">
+  <div>
+    <p class="eyebrow">Find it yourself</p>
+    <p>Open a category to find the reference, field resource or process walkthrough you need.</p>
+  </div>
+</header>
+
+<div class="categories">
+
+  <div class="category" data-cat="pipeline">
+    <button class="cat-head" aria-expanded="false"><span class="cat-title">Build Your Pipeline</span><span class="cat-toggle">+</span></button>
+    <div class="cat-body">
+      <a class="res-item" href="https://propelrpay1.sharepoint.com/sites/Aviator-Hub/_layouts/15/stream.aspx?id=%2Fsites%2FAviator%2DHub%2FShared%20Documents%2FStratus%20How%20To%20Create%20Lead%20pick%20Platform%2Emov&nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjowLjA5NjQ2N319&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Ec6c4a760%2Dcd23%2D4f7a%2D9ebd%2Dfe65b04aefcf" target="_blank" rel="noopener noreferrer">
+        <span class="res-title">How to Enter a Lead</span>
+        <span class="res-desc">Video walkthrough for creating a lead in Stratus.</span>
+      </a>
+      <a class="res-item" href="https://referenceusa.com/Static/LibraryLocator" target="_blank" rel="noopener noreferrer">
+        <span class="res-title">Reference Solutions</span>
+        <span class="res-desc">Build focused prospect lists using business and location data.</span>
+      </a>
+      <a class="res-item" href="https://www.bni.com/" target="_blank" rel="noopener noreferrer">
+        <span class="res-title">BNI</span>
+        <span class="res-desc">Find local networking and referral-building opportunities.</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="category" data-cat="knowledge">
+    <button class="cat-head" aria-expanded="false"><span class="cat-title">Build Your Knowledge</span><span class="cat-toggle">+</span></button>
+    <div class="cat-body">
+      <a class="res-item" href="https://propelrpay1.sharepoint.com/sites/AviatorLD/SitePages/Glossary.aspx" target="_blank" rel="noopener noreferrer">
+        <span class="res-title">Payments Glossary</span>
+        <span class="res-desc">Definitions grounded in the ETA CPP study guide.</span>
+      </a>
+      <a class="res-item" href="https://propelrpay1.sharepoint.com/sites/Aviator-Hub/SitePages/Flight-School.aspx?web=1" target="_blank" rel="noopener noreferrer">
+        <span class="res-title">Flight School</span>
+        <span class="res-desc">Deeper continuing education for Aviators.</span>
+      </a>
+    </div>
+  </div>
+
+  <div class="category" data-cat="application">
+    <button class="cat-head" aria-expanded="false"><span class="cat-title">Build the Application</span><span class="cat-toggle">+</span></button>
+    <div class="cat-body">
+      <a class="res-item" href="https://propelrpay1.sharepoint.com/sites/Aviator-Hub/_layouts/15/stream.aspx?id=%2Fsites%2FAviator%2DHub%2FShared%20Documents%2FStratus%20How%20To%20Set%20Pricing%2Emov&nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxLjMwNjE4Mn19&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2Eec91d563%2Ddbf5%2D4c2d%2Db08e%2D8800429fa10b" target="_blank" rel="noopener noreferrer">
+        <span class="res-title">How to Set Pricing</span>
+        <span class="res-desc">Stratus walkthrough for entering approved merchant pricing.</span>
+      </a>
+      <a class="res-item" href="https://propelrpay1.sharepoint.com/sites/Aviator-Hub/_layouts/15/stream.aspx?id=%2Fsites%2FAviator%2DHub%2FShared%20Documents%2FStratus%20How%20To%20Add%20Equip%2Emov&nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxLjE5NDY5fX0%3D&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E40f28e37%2D6e84%2D443a%2D9b29%2Db0285cf981f7" target="_blank" rel="noopener noreferrer">
+        <span class="res-title">How to Add Equipment</span>
+        <span class="res-desc">Stratus walkthrough for adding approved equipment.</span>
+      </a>
+      <a class="res-item" href="https://propelrpay1.sharepoint.com/sites/Aviator-Hub/_layouts/15/stream.aspx?id=%2Fsites%2FAviator%2DHub%2FShared%20Documents%2FStratus%20How%20To%20Send%20Agreement%2Emov&nav=eyJwbGF5YmFja09wdGlvbnMiOnsic3RhcnRUaW1lSW5TZWNvbmRzIjoxLjQ5MjcwOH19&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview%2E798d7b71%2D83f8%2D478d%2D9c5a%2Dbfb71fce77c2" target="_blank" rel="noopener noreferrer">
+        <span class="res-title">How to Send an Agreement</span>
+        <span class="res-desc">Stratus walkthrough for sending the agreement for signature.</span>
+      </a>
+    </div>
+  </div>
+
+</div>
+</main>
+<script>
+document.querySelectorAll('.cat-head').forEach(function(btn){
+  btn.addEventListener('click', function(){
+    var cat = btn.closest('.category');
+    var isOpen = cat.classList.toggle('open');
+    btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    btn.querySelector('.cat-toggle').textContent = isOpen ? '\u2212' : '+';
+  });
+});
+</script>
+</body>
+</html>
